@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import Player from "./components/player";
-import Slider3 from "./components/slider3";
+import MovieLane from "./components/movieLane";
 import { Route, Link, Switch } from "react-router-dom";
 
 class App extends Component {
@@ -81,23 +81,23 @@ class App extends Component {
 
   render() {
     const { assets, displaySlider } = this.state;
-    console.log(displaySlider);
     return (
       <main className="container-fluid">
         <Switch>
           <Route
             path="/:id"
-            render={(props) => <Player assets={assets} {...props} />}
+            render={(props) => (
+              <Player assets={assets} {...props} onClick={this.handleClick} />
+            )}
           />
           <Route
             path="/"
-            render={(props) => <Player assets={assets} {...props} />}
+            render={(props) => (
+              <Player assets={assets} {...props} onClick={this.handleClick} />
+            )}
           />
         </Switch>
-        <Slider3 assets={assets} displaySlider={displaySlider} />
-        <Link to="" onClick={this.handleClick}>
-          <h1>Ähnliche Videos</h1>
-        </Link>
+        <MovieLane assets={assets} displaySlider={displaySlider} />
       </main>
     );
   }

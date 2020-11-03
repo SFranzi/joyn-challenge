@@ -12,14 +12,14 @@ code {
     monospace;
 }
 
-/* #myVideo {
+#myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
 }
- */
+
 /* Ähnliche Videos CSS */
 
 /* .content {
@@ -61,4 +61,13 @@ span {
   font-weight: bold;
   bottom: 8px;
   left: 12px;
+}
+
+/*Overlay */
+
+h3 {
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+  color: white;
 }

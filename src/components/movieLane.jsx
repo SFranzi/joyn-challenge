@@ -10,12 +10,12 @@ const MovieLane = ({assets, displaySlider}) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1
   };
 
   return (
-
+      <div className="slider">
       <Slider {...settings}>
         {assets.map(a => {
           return (
@@ -32,6 +32,7 @@ const MovieLane = ({assets, displaySlider}) => {
           );
         })}
       </Slider>
+      </div>
 
  
 
