@@ -20,29 +20,6 @@ code {
   min-height: 100%;
 }
 
-/* Ähnliche Videos CSS */
-
-/* .content {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-}
-
-.content a {
-  color: #f1f1f1;
-}
-
-.content a:hover {
-  text-decoration: none;
-  color: #adb5bd;
-}
-
-.content a {
-  line-height: 5.2;
-}
- */
-
 /*Slider Images*/
 .wrapper {
   height: 150px;
